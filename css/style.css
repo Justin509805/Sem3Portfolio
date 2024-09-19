@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --main: #20232C;
+    --white: #fff;
   }
 
 body {
@@ -37,7 +42,7 @@ body {
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--white);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -58,7 +63,75 @@ body {
     display: none;
   }
 
-  
+  .flex-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .welcome h1 {
+    font-size: clamp(1.5rem, 3.5vw, 4rem);     
+    color:var(--white);
+    font-weight: 300;
+  }
+
+  .portfolio h1 {
+    font-size: clamp(3.5rem, 8vw, 12rem);     
+    font-weight: 900;
+    color:var(--white);
+    margin-bottom: 50px;
+
+
+  }
+
+  .name p {
+    font-size: clamp(1.3rem, 2.5vw, 3rem);     
+    color:var(--white);
+    font-weight: 300;
+  }
+
+
+  .title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    font-size: clamp(1.5rem, 3vw, 4rem);     
+    color:var(--white);
+    font-weight: 300;
+  }
+
+  .child-element img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .child-element p {
+    font-size: clamp(2.5rem, 2.5vw, 4rem);     
+    color:var(--white);
+    font-weight: 300;
+  }
+
+  .child-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+
+/* Media queries */
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -81,4 +154,15 @@ body {
       text-align: left;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .grid-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
+  }
+
 
