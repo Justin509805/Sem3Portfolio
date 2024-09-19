@@ -99,18 +99,20 @@ body {
     align-items: center;
     justify-content: center;
     height: 30vh;
-    font-size: clamp(1.5rem, 2vw, 3rem);     
+    font-size: clamp(2rem, 3vw, 4rem);     
     color:var(--white);
     font-weight: 300;
   }
 
   .child-element img {
-    max-width: 80px;
+    max-width: clamp(8.3rem, 1vw, 4rem);
     height: auto;
+    margin: 20px;
   }
 
   .child-element p {
-    font-size: clamp(2rem, 2vw, 4rem);     
+    text-align: center;
+    font-size: clamp(1.3rem, 2vw, 6rem);     
     color:var(--white);
     font-weight: 300;
   }
@@ -125,8 +127,8 @@ body {
   .grid-parent {
     margin: 0px 80px 0px 80px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 40px; 
   }
