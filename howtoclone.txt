@@ -1,7 +1,0 @@
-Open deze Map
-
-Open de Terminal in de map
-
-git clone *github url*
-
-Map slepen in VSCode

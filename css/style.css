@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: var(--main);
-    height: 300vh;
+    height: 500vh;
 }
 
 .firstpage {
@@ -115,7 +115,7 @@ body {
     text-align: center;
     font-size: clamp(1.3rem, 2vw, 6rem);     
     color:var(--white);
-    font-weight: 300;
+    font-weight: 900;
   }
 
   .child-element {
@@ -124,7 +124,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 0 3px 3px 3px rgba(255, 255, 255, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.2), 0px 3px 3px 8px rgba(255, 255, 255, 0.19);
   }
 
   .grid-parent {
@@ -132,8 +132,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; 
   }
 
   /* Progress Bar Section */
@@ -146,19 +146,19 @@ body {
 .progress-container {
   display: flex;
   align-items: center;
-  background-color: #ddd;
-  border-radius: 25px;
-  width: 90%;
+  background-color: #ffffff;
+  border-radius: 35px;
+  width: 80%;
   height: 20px;
-  margin: 20px;
+  margin: 30px;
   position: relative;
 }
 
 .progress-bar {
   height: 100%;
-  width: 0%; /* Initial width */
-  background-color: #4caf50;
-  border-radius: 25px;
+  width: 0%; 
+  background: linear-gradient(0.25turn, #0B2545, #113F78, #739DD1);  
+  border-radius: 20px;
   transition: width 1s ease;
 }
 
@@ -168,9 +168,19 @@ body {
 #progress-text-4,
 #progress-text-5,
 #progress-text-6 {
-    margin-left: 10px;
+    margin-left: 5px;
     font-family: 'SUSE', sans-serif;
     font-size: 18px;
+}
+
+.skills {
+  margin-bottom: 100px;
+}
+
+.secondpage {
+  height: 100vh;
+  background-image: url('/img/maintwo.png');
+  background-size: cover;
 }
 
 
@@ -204,8 +214,8 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
       }
       
       
@@ -216,8 +226,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 20px; 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; 
     }
   }
 
