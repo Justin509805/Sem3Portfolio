@@ -18,6 +18,17 @@ body {
     height: 500vh;
 }
 
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .firstpage {
     height: 100vh;
     background-image: url('/img/mainone.png');
@@ -26,18 +37,17 @@ body {
 
 .firstpage>.topnav {
     font-family: "SUSE", sans-serif;
-
 }
 
 
 .topnav {
-    height: 100px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;  
-    align-items: center;     
-    flex-wrap: wrap;  
-    position: relative;        
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;       
 }
   
   .topnav a {
@@ -48,7 +58,17 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideDown 0.8s forwards;
   }
+
+  @keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
   
   .topnav a:hover {
     background-color: #ddd;
@@ -84,8 +104,6 @@ body {
     font-weight: 900;
     color:var(--white);
     margin-bottom: 50px;
-
-
   }
 
   .name p {
@@ -94,6 +112,18 @@ body {
     font-weight: 300;
   }
 
+  .welcome h1, .portfolio h1, .name p {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 1.2s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
 
   .title h1 {
     display: flex;
@@ -105,11 +135,12 @@ body {
     font-weight: 300;
   }
 
-  .child-element img {
-    max-width: clamp(6.3rem, 1vw, 4rem);
+  .child-element>img {
+    max-width: clamp(4rem, 4rem, 8vw);
     height: auto;
     margin: 20px;
   }
+
 
   .child-element p {
     text-align: center;
@@ -120,13 +151,10 @@ body {
 
   .child-element {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.2), 0px 3px 3px 8px rgba(255, 255, 255, 0.19);
-  }
 
+  }
   .grid-parent {
     margin: 0px 80px 0px 80px;
     display: grid;
@@ -146,7 +174,8 @@ body {
 .progress-container {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #0B2545;
+  border: #739DD1 solid 1px;
   border-radius: 35px;
   width: 80%;
   height: 20px;
@@ -157,7 +186,7 @@ body {
 .progress-bar {
   height: 100%;
   width: 0%; 
-  background: linear-gradient(0.25turn, #0B2545, #113F78, #739DD1);  
+  background: linear-gradient(0.25turn, #113F78, #739DD1);  
   border-radius: 20px;
   transition: width 1s ease;
 }
@@ -171,6 +200,8 @@ body {
     margin-left: 5px;
     font-family: 'SUSE', sans-serif;
     font-size: 18px;
+    color: #fff;
+    font-weight: 900;
 }
 
 .skills {
@@ -183,9 +214,43 @@ body {
   background-size: cover;
 }
 
+.secondpage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectslider {
+  background-color: #ffffff;
+  width: clamp(80vw, 50vw, 80vw); 
+  height: clamp(50vh, 80vh, 90vh); 
+  border-radius: 20px;
+  margin-top: -40px;
+}
+
+.projectskider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #fff 1px solid;
+  border-radius: 25px;
+  padding: 5px 25px 5px 25px;
+  margin: 30px;
+}
+
+.projectskider-btn a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 25px 5px 25px;
+}
+
+.projectskider-btn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 
 /* Media queries */
-
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -209,7 +274,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 1240px) {
     .grid-parent {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -217,17 +282,28 @@ body {
       grid-column-gap: 30px;
       grid-row-gap: 30px;
       }
-      
-      
+       
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 940px) {
     .grid-parent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px; 
+    }
+  }
+
+
+
+  @media screen and (max-width: 640px) {
+    .child-element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
     }
   }
 
