@@ -16,8 +16,8 @@
         <div class="topnav" id="myTopnav">
             <a href="#" class="active">HOME</a>
             <a href="#projects">PROJECTS</a>            
-            <a href="#">LEARNING OUTCOMES</a>
-            <a href="#skills">SKILLS</a>
+            <a href="javascript:void(0);" id="learning-outcomes-link">LEARNING OUTCOMES</a>
+           <a href="#skills">SKILLS</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -28,44 +28,64 @@
             <div class="name"><p>JUSTIN VEENHUIS</p></div>
           </div>
     </section>
-    <section id="skills" class="skills">        <div class="title"><h1>MY SKILLS</h1></div>
+
+    <div id="learningOutcomesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>LEARNING OUTCOMES</h2>
+            <div class="button-container">
+                <a href="#outcome1" class="modal-button">Outcome 1</a>
+                <a href="#outcome2" class="modal-button">Outcome 2</a>
+                <a href="#outcome3" class="modal-button">Outcome 3</a>
+                <a href="#outcome4" class="modal-button">Outcome 4</a>
+                <a href="#outcome5" class="modal-button">Outcome 5</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="skills" class="skills">        
+        <div class="title"><h1>THINGS I AM GOOD AT</h1></div>
         <div class="grid-parent">
-            <div class="child-element"><img src="/img/html_150dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            <div class="child-element"><i class="fa-brands fa-html5"></i>
             <div class="progress-container">
                 <div class="progress-bar" id="progress-bar-1"></div>
                 <span id="progress-text-1">0%</span>
             </div>
             </div>
-            <div class="child-element"><img src="/img/css_150dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            <div class="child-element"><i class="fa-brands fa-css3-alt"></i>
                 <div class="progress-container">
                     <div class="progress-bar" id="progress-bar-2"></div>
                     <span id="progress-text-2">0%</span>
                 </div>
                 </div>
-                <div class="child-element"><img src="/img/javascript_150dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <div class="child-element"><i class="fa-brands fa-figma"></i>
                     <div class="progress-container">
                         <div class="progress-bar" id="progress-bar-3"></div>
                         <span id="progress-text-3">0%</span>
                     </div>
+                </div>
+        </div>
+        <div class="line"><hr></div>
+        <div class="title"><h1>THINGS I CAN IMPROVE ON</h1></div>
+        <div class="grid-parent">
+            <div class="child-element"><i class="fa-brands fa-js"></i>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar-4"></div>
+                <span id="progress-text-4">0%</span>
+            </div>
+            </div>
+            <div class="child-element">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar-5"></div>
+                    <span id="progress-text-5">0%</span>
+                </div>
+                </div>
+                <div class="child-element">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar-6"></div>
+                        <span id="progress-text-6">0%</span>
                     </div>
-                    <div class="child-element"><img src="/img/photoshop(2).png" alt="">
-                        <div class="progress-container">
-                            <div class="progress-bar" id="progress-bar-4"></div>
-                            <span id="progress-text-4">0%</span>
-                        </div>
-                        </div>
-                        <div class="child-element"><img src="/img/figma(1).png" alt="">
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progress-bar-5"></div>
-                                <span id="progress-text-5">0%</span>
-                            </div>
-                            </div>
-                            <div class="child-element"><img src="/img/team.png" alt="">
-                                <div class="progress-container">
-                                    <div class="progress-bar" id="progress-bar-6"></div>
-                                    <span id="progress-text-6">0%</span>
-                                </div>
-                                </div>
+                </div>
         </div>
     </section>
     <section class="secondpage">
