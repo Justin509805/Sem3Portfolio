@@ -23,30 +23,48 @@ function myFunction() {
     });
 };
 
+
 // Learning outcomes popup
 // Makes the code run dom is loaded
 document.addEventListener("DOMContentLoaded", function() {
-  // modal
-  const modal = document.getElementById('learningOutcomesModal');
-  // button on the modal
-  const openModalBtn = document.getElementById('learning-outcomes-link');
-  // x to close the modal
-  const closeModalBtn = document.querySelector('.close');
-  // open modal on click
-  openModalBtn.onclick = function() {
-      modal.style.display = "block";
+  // Learning Outcomes Modal
+  const learningOutcomesModal = document.getElementById('learningOutcomesModal');
+  const openLearningOutcomesBtn = document.getElementById('learning-outcomes-link');
+  const closeLearningOutcomesBtn = learningOutcomesModal.querySelector('.close');
+  
+    // open modal on click
+  openLearningOutcomesBtn.onclick = function() {
+      learningOutcomesModal.style.display = "block";
   }
-  // close the modal onclick x
-  closeModalBtn.onclick = function() {
-      modal.style.display = "none";
+    // also close when click outside of modal
+  closeLearningOutcomesBtn.onclick = function() {
+      learningOutcomesModal.style.display = "none";
   }
-  // also close when click outside of modal
+
+  // Projects Modal
+  const projectsModal = document.getElementById('projectsModal');
+  const openProjectsBtn = document.getElementById('projects-link');
+  const closeProjectsBtn = projectsModal.querySelector('.close');
+      // open modal on click
+  openProjectsBtn.onclick = function() {
+      projectsModal.style.display = "block";
+  }
+      // also close when click outside of modal
+  closeProjectsBtn.onclick = function() {
+      projectsModal.style.display = "none";
+  }
+
+  // Close modal if clicking outside of the container
   window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
+      if (event.target == learningOutcomesModal) {
+          learningOutcomesModal.style.display = "none";
+      } else if (event.target == projectsModal) {
+          projectsModal.style.display = "none";
       }
   }
 });
+
+
 
 
 
