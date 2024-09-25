@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: var(--main);
-    height: 500vh;
+
 }
 
 .fade-in-on-scroll {
@@ -276,14 +276,15 @@ body {
   } 
   
 
-.footer-nav-parent a, h1 {
+.footer-nav-parent a, h1, p {
   text-decoration: none;
   color: #fff;
 }
 
 .footer-nav-parent a:hover {
   text-decoration: none;
-  color: #000000;
+  background-color: #ddd;
+  color: black;
 }
 
 .footer-nav-container {
