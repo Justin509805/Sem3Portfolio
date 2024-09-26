@@ -20,6 +20,7 @@ body {
 
 }
 
+/* Fade in animation homepage */
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(50px);
@@ -31,6 +32,7 @@ body {
   transform: translateY(0);
 }
 
+/* Bg image home screen */
 .firstpage {
     height: 100vh;
     background-image: url('/img/mainone.png');
@@ -41,7 +43,7 @@ body {
     font-family: "SUSE", sans-serif;
 }
 
-
+/* Navbar flex */
 .topnav {
   height: 100px;
   overflow: hidden;
@@ -85,7 +87,7 @@ body {
   .topnav .icon {
     display: none;
   }
-
+  /* Home page content container */
   .flex-parent {
     display: flex;
     flex-direction: column;
@@ -94,7 +96,7 @@ body {
     height: 80vh;
     width: 100vw;
   }
-
+  /* Home page content */
   .welcome h1 {
     font-size: clamp(1.5rem, 3.5vw, 4rem);     
     color:var(--white);
@@ -126,7 +128,7 @@ body {
       transform: translateX(0);
   }
 }
-
+  /* Title skills section */
   .title h1 {
     display: flex;
     align-items: center;
@@ -208,11 +210,12 @@ body {
     color: #fff;
     font-weight: 400;
 }
-
+/* Skills section */
 .skills {
   margin-bottom: 100px;
 }
 
+/* Page under skillspage */
 .secondpage {
   height: 100vh;
   background-image: url('/img/maintwo.png');
@@ -224,15 +227,14 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-.projectslider {
-  background-color: #ffffff;
+/* image of the project slider */
+.projectslider img {
   width: clamp(80vw, 50vw, 80vw); 
   height: clamp(50vh, 80vh, 90vh); 
   border-radius: 20px;
   margin-top: -40px;
 }
-
+/* project slider button */
 .projectskider-btn {
   display: flex;
   justify-content: center;
@@ -253,7 +255,7 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+/* Footer punchline */
 .footer .footer-punchline {
   display: flex;
   flex-direction: column;
@@ -272,7 +274,7 @@ body {
 .footer .footer-punchline p {
   font-size: clamp(1rem, 2vw, 4rem);    
 }
-
+/* Footer navigation container */
 .footer-nav-parent {
   display: flex;
   flex-direction: column;
@@ -297,7 +299,7 @@ body {
   justify-content: space-around;
   width: 100%;
 }
-
+/* Skills section icons */
 .fa-html5, .fa-css3-alt {
   color: var(--whitesmoke);
   font-size: 60px;
@@ -314,7 +316,7 @@ body {
   gap: 10px; 
   margin-top: 20px;
 }
-
+/* Learning outcomes popup */
 .modal-button {
   display: inline-block;
   padding: 10px 20px;
@@ -406,13 +408,13 @@ body {
 /* ---------------------------------------------LO's Page Styling------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------- */
-
+/* Header */
 .header {
   height: 100vh;
   background-image: url('/img/maintwo.png');
   background-size: cover;
 } 
-
+/* return home icon */
 .return-home {
   display: flex;
   justify-content: flex-end;
@@ -430,13 +432,13 @@ body {
   color: black;
   padding: 10px;
 }
-
+/* category */
 .category p {
   color: var(--accent-blue);
   font-size: clamp(0.5rem, 3vw, 1.5rem);  
   font-weight: 600;
 }
-
+/* category title */
 .category-title h1 {
   color: var(--white);
   font-size: clamp(2rem, 11vw, 5rem);   
@@ -497,11 +499,6 @@ body {
   justify-content: center;
   margin-top: -10%;
 }
-
-
-
-
-
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------- */
