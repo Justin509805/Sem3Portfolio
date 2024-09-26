@@ -217,7 +217,6 @@ body {
 
 /* Page under skillspage */
 .secondpage {
-  height: 100vh;
   background-image: url('/img/maintwo.png');
   background-size: cover;
 }
@@ -228,9 +227,15 @@ body {
   flex-direction: column;
 }
 /* image of the project slider */
+.projectslider {
+  display: flex;
+  justify-content: center;
+}
+
+
 .projectslider img {
-  width: clamp(80vw, 50vw, 80vw); 
-  height: clamp(50vh, 80vh, 90vh); 
+  width: 80%;
+  height: auto;
   border-radius: 20px;
   margin-top: -40px;
 }
