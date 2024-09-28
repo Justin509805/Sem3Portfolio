@@ -10,7 +10,7 @@ function myFunction() {
   
   // Progressbars
   window.onload = function() {
-    const scoresOutOfTen = [7, 8.5, 9, 3, 6, 8.5]; // Scores out of 10 for each bar
+    const scoresOutOfTen = [7, 8.5, 9, 5, 7, 8.5]; // Scores out of 10 for each bar
 
     scoresOutOfTen.forEach((score, index) => {
         const progressBar = document.getElementById(`progress-bar-${index + 1}`);

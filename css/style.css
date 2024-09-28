@@ -310,7 +310,7 @@ body {
   font-size: 60px;
 }
 
-.fa-figma, .fa-js {
+.fa-figma, .fa-js, .fa-clock, .fa-wordpress {
   color: var(--whitesmoke);
   font-size: 50px;
 }
