@@ -17,7 +17,6 @@ html {
 
 body {
     background-color: var(--main);
-
 }
 
 /* Fade in animation homepage */
@@ -104,7 +103,7 @@ body {
   }
 
   .portfolio h1 {
-    font-size: clamp(3.5rem, 8vw, 12rem);     
+    font-size: clamp(3.2rem, 8vw, 12rem);     
     font-weight: 900;
     color:var(--white);
     margin-bottom: 50px;
@@ -134,7 +133,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 30vh;
-    font-size: clamp(1.5rem, 2.5vw, 4rem);     
+    font-size: clamp(1.2rem, 2.5vw, 4rem);     
     color:var(--white);
     font-weight: 300;
   }
@@ -272,12 +271,14 @@ body {
 
 .footer .footer-punchline h1 {
   font-size: clamp(2.5rem, 6.5vw, 6rem); 
-  font-weight: 900;    
+  font-weight: 900;  
+  text-align: center;  
 
 }
 
 .footer .footer-punchline p {
-  font-size: clamp(1rem, 2vw, 4rem);    
+  font-size: clamp(1rem, 2vw, 4rem);
+  text-align: center;    
 }
 /* Footer navigation container */
 .footer-nav-parent {
@@ -304,6 +305,7 @@ body {
   justify-content: space-around;
   width: 100%;
 }
+
 /* Skills section icons */
 .fa-html5, .fa-css3-alt {
   color: var(--whitesmoke);
@@ -313,6 +315,12 @@ body {
 .fa-figma, .fa-js, .fa-clock, .fa-wordpress {
   color: var(--whitesmoke);
   font-size: 50px;
+}
+
+.fa-linkedin, .fa-github, .fa-file, .fa-envelope {
+  color: var(--whitesmoke);
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .button-container {
@@ -450,6 +458,10 @@ body {
   font-weight: 900;
 }
 
+.title h1 {
+  text-align: center;
+}
+
 .category-info p {
   color: var(--white);
   font-size: clamp(1rem, 2.5vw, 1.8rem);  
@@ -580,7 +592,6 @@ body {
       flex-direction: column;
       justify-content: space-around;
       width: 100%;
-      margin: 20px;
     }
   }
 
