@@ -529,14 +529,14 @@ body {
   border-radius: 15px;
 }
 /* Div for the href and img */
-.first-img-img {
+.div-href-img-overlay {
   position: relative;
-  width: 89%;
+  width: 80%;
   display: flex;
   justify-content: center;
 }
 
-.first-img-img img {
+.div-href-img-overlay img {
   width: 100%;
   border-radius: 15px;
   transition: 0.3s ease;
@@ -566,15 +566,15 @@ body {
   transition: 0.3s ease;
 }
 /* image when hovered */
-.first-img-img:hover img {
+.div-href-img-overlay:hover img {
   filter: blur(2px) brightness(0.7);
 }
 
-.first-img-img:hover .overlay {
+.div-href-img-overlay:hover .overlay {
   opacity: 1;
 }
 
-.first-img-img:hover .overlay .text {
+.div-href-img-overlay:hover .overlay .text {
   opacity: 1;
   transform: translateY(0);
 }
