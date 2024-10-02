@@ -440,9 +440,9 @@ body {
   background-size: cover;
 } 
 /* return home icon */
-.return-home {
+.nav-icons-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .return-home i {
@@ -457,6 +457,20 @@ body {
   color: black;
   padding: 10px;
 }
+
+.return-popup i {
+  padding: 10px;
+  margin: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.return-popup i:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 10px;
+}
+
 /* category */
 .category p {
   color: var(--accent-blue);
