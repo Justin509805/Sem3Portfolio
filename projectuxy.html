@@ -15,7 +15,10 @@
     </head>
 <body>
     <section class="header">
-        <div class="return-home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        <div class="nav-icons-container">
+            <div class="return-popup"><a href="javascript:void(0);" id="projects-link"><i class="fa-solid fa-backward"></i></a></div>
+            <div class="return-home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        </div>
         <div class="caterory-container">
             <div class="category"><p>PROJECTS</p></div>
             <div class="category-title"><h1>UXYNERGY</h1></div>
@@ -25,8 +28,26 @@
             </p></div>
         </div>
     </section>
+    <!-- Popup for Projects -->
+    <div id="projectsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>PROJECTS</h2>
+            <div class="button-container">
+                <a href="projectuxy.html" class="modal-button">UXYNERGY</a>
+                <a href="projectclient.html" class="modal-button">CLIENT PROJECT</a>
+            </div>
+        </div>
+    </div>
     <section class="first-img">
-        <img src="/img/brandguide.png" alt="">
+        <div class="div-href-img-overlay">
+            <a href="https://www.figma.com/design/aQxjv1O8SbyWyRhndONYRK/Brand-guide?node-id=0-1&node-type=canvas&t=mqkxmR7C5s3Uz4Go-0" target="_blank" rel="noopener noreferrer">
+                <img src="/img/brandguide.png" alt="">
+                <div class="overlay">
+                    <div class="text">VIEW FIGMA</div>
+                </div>
+            </a>
+        </div>
     </section>
     <section class="explanation">
         <div class="caterory-container">
@@ -37,13 +58,19 @@
         </div>
     </section>
     <section class="first-img">
-        <img src="/img/uxypitch.png" alt="">
+        <div class="div-href-img-overlay">
+            <a href="/docs/UXYNERGY_video.mp4" target="_blank" rel="noopener noreferrer">
+                <img src="/img/uxypitch.png" alt="">
+                <div class="overlay">
+                    <div class="text">VIEW VIDEO</div>
+                </div>
+            </a>
+        </div>
     </section>
     <section class="explanation">
         <div class="caterory-container">
             <div class="category-title-2"><h1>CLIENT PITCH VIDEO</h1></div>
             <div class="category-info-2"><p>We had to create a pitch video about our company for Stan and Dirk's class. We could also use this for our client pitch. So to kill two birds in one stone we made it into a pitch video for our company. 
-                <br> <br> You can view it <a href="/docs/UXYNERGY_video.mp4">Here</a>.
                 <br> <br> This fits the following learning outcomes: <a href="lo4.html">LO4</a>.
             </p></div>
         </div>
