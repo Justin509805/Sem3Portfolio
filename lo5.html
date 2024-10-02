@@ -16,13 +16,30 @@
 <body>
         <!-- First section with home icon, category, title and explanation -->
     <section class="header">
-        <div class="return-home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        <div class="nav-icons-container">
+            <div class="return-popup"><a href="javascript:void(0);" id="learning-outcomes-link"><i class="fa-solid fa-backward"></i></a></div>
+            <div class="return-home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        </div>
         <div class="caterory-container">
             <div class="category"><p>LEARNING OUTCOMES</p></div>
             <div class="category-title"><h1>LEARNING OUTCOMES 5</h1></div>
             <div class="category-info"><p>You are aware of your own strengths and weaknesses, both in the field of ICT and in your personal development. You choose actions in line with your core values to promote your personal growth and develop your learning atitude.</p></div>
         </div>
     </section>
+            <!-- Popup for Learning Outcomes -->
+            <div id="learningOutcomesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>LEARNING OUTCOMES</h2>
+                    <div class="button-container">
+                        <a href="lo1.html" class="modal-button">Outcome 1</a>
+                        <a href="lo2.html" class="modal-button">Outcome 2</a>
+                        <a href="lo3.html" class="modal-button">Outcome 3</a>
+                        <a href="lo4.html" class="modal-button">Outcome 4</a>
+                        <a href="lo5.html" class="modal-button">Outcome 5</a>
+                    </div>
+                </div>
+            </div>
         <!-- Image section -->
     <section class="first-img">
         <img src="/img/weaknessmockup.png" alt="">
