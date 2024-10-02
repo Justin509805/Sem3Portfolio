@@ -353,7 +353,7 @@ body {
   justify-content: center;
   gap: 10px;
   border-radius: 15px;
-  border: #ddd solid 1px;
+  border: #ddd solid;
 }
 
 .button-container {
