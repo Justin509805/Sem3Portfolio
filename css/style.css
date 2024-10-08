@@ -340,7 +340,12 @@ body {
   padding: 5px;
 }
 
-.fa-gitlab:hover {
+.documentation i {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.documentation i:hover {
   background-color: #ddd;
   color: black;
   padding: 5px;
