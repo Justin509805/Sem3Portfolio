@@ -335,7 +335,7 @@ body {
   color: black;
 }
 
-.fa-gitlab, .fa-file-pdf, .fa-play  {
+.fa-gitlab, .fa-file-pdf, .fa-play, .fa-trello  {
   font-size: 25px;
   padding: 5px;
 }
