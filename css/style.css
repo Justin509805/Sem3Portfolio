@@ -335,7 +335,7 @@ body {
   color: black;
 }
 
-.fa-gitlab, .fa-file-pdf  {
+.fa-gitlab, .fa-file-pdf, .fa-play  {
   font-size: 25px;
   padding: 5px;
 }
@@ -343,7 +343,19 @@ body {
 .fa-gitlab:hover {
   background-color: #ddd;
   color: black;
-  padding: 10px;
+  padding: 5px;
+}
+
+.fa-play:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 5px;
+}
+
+
+.documentation:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 .documentation {
