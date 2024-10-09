@@ -321,7 +321,12 @@ body {
   font-size: 3em;
 }
 
-.fa-linkedin, .fa-github, .fa-file, .fa-envelope {
+.fa-xl {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.fa-linkedin, .fa-file, .fa-envelope {
   color: var(--whitesmoke);
   font-size: 20px;
   margin-right: 10px;
