@@ -41,19 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
       learningOutcomesModal.style.display = "none";
   }
 
-  // Projects Modal
-  const projectsModal = document.getElementById('projectsModal');
-  const openProjectsBtn = document.getElementById('projects-link');
-  const closeProjectsBtn = projectsModal.querySelector('.close');
-      // open modal on click
-  openProjectsBtn.onclick = function() {
-      projectsModal.style.display = "block";
-  }
-      // also close when click outside of modal
-  closeProjectsBtn.onclick = function() {
-      projectsModal.style.display = "none";
-  }
 
+  // PROJECTS MODAL
   // Close modal if clicking outside of the container
   window.onclick = function(event) {
       if (event.target == learningOutcomesModal) {
@@ -64,6 +53,23 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+var modal = document.getElementById("projectsModal");
+var btn = document.getElementById("projects-link");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
 
