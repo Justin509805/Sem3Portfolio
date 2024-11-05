@@ -1,22 +1,29 @@
-// Open and close hamburger icon for small devices
+// Open and close hamburger icon (for phones)
 function myFunction() {
+  // Selects element with the Id: myTopnav and stores it in a variable x
     var x = document.getElementById("myTopnav");
+
+    // Cheks if the element's class is set to topnav
+    // If it is, it adds the responsive class to the element
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
+      // If the responsive class is already set then it revert back to only topnav
       x.className = "topnav";
     }
   }
   
   // Progressbars
   window.onload = function() {
-    const scoresOutOfTen = [7, 8.5, 9, 5, 7, 8.5]; // Scores out of 10 for each bar
+    // List of scores
+    const scoresOutOfTen = [7, 8.5, 9, 5, 7, 8.5];
 
+    // Get the progress bar/text element by the Id: progress-bar/progress-text
     scoresOutOfTen.forEach((score, index) => {
         const progressBar = document.getElementById(`progress-bar-${index + 1}`);
         const progressText = document.getElementById(`progress-text-${index + 1}`);
 
-        // Makes filled in amount convert to percentage on the progressbar
+        // Makes the score into a percentage, adds a "%" icon or "out of 10"
         const percentage = score * 10;
         progressBar.style.width = `${percentage}%`;
         progressText.textContent = `${score}/10`;
@@ -32,18 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const openLearningOutcomesBtn = document.getElementById('learning-outcomes-link');
   const closeLearningOutcomesBtn = learningOutcomesModal.querySelector('.close');
   
-    // open modal on click
+    // Opens modal on click
   openLearningOutcomesBtn.onclick = function() {
       learningOutcomesModal.style.display = "block";
   }
-    // also close when click outside of modal
+    // Also closes when clicked outside of modal
   closeLearningOutcomesBtn.onclick = function() {
       learningOutcomesModal.style.display = "none";
   }
 
 
-  // PROJECTS MODAL
-  // Close modal if clicking outside of the container
+  // Project popup
+  // Closes modal if clicked outside of the container
   window.onclick = function(event) {
       if (event.target == learningOutcomesModal) {
           learningOutcomesModal.style.display = "none";
