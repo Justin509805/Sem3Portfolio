@@ -6,6 +6,7 @@ Welcome to my Semester 3 Portfolio Website! This website showcases my skills, pr
 # Sections 📚
 
 ✔️ HOME PAGE
+
 ✔️ LEARNING OUTCOMES 1-5
 ✔️ UXYNERGY
 ✔️ FAST FASHION
