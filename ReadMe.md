@@ -22,8 +22,12 @@ Here’s what you can explore on my website:
 
 The website is built using **HTML**, **CSS**, and **JavaScript**.  
 
+---
+
 ### **Requirements**:  
 - A browser capable of loading **HTML**, **CSS**, and **JavaScript** pages.
+
+---
 
 ### **Steps to Clone the Repository**:  
  ```bash
@@ -31,11 +35,14 @@ The website is built using **HTML**, **CSS**, and **JavaScript**.
   ```
   This will clone the whole repository in your system.
 
+---
+
 ## **Reading Guide** 📖
 
 A less-detailed document to warm you up for my website and Gitwiki:
 📄 Download Reading Guide
 
+---
 
 ## **Links** 🌐
     GitHub: https://github.com/Justin509805?tab=repositories
