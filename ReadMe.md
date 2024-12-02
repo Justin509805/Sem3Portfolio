@@ -22,12 +22,11 @@ Here’s what you can explore on my website:
 
 The website is built using **HTML**, **CSS**, and **JavaScript**.  
 
----
 
 ### **Requirements**:  
 - A browser capable of loading **HTML**, **CSS**, and **JavaScript** pages.
 
----
+
 
 ### **Steps to Clone the Repository**:  
  ```bash
