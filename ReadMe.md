@@ -38,8 +38,7 @@ The website is built using **HTML**, **CSS**, and **JavaScript**.
 
 ## **Reading Guide** 📖
 
-A less-detailed document to warm you up for my website and Gitwiki:
-📄 Download Reading Guide
+You can find the reading guide on my website, underneath the projects section and on the footer.
 
 ---
 
