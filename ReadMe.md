@@ -31,7 +31,12 @@ The website is built using **HTML**, **CSS**, and **JavaScript**.
   ```
   This will clone the whole repository in your system.
 
+## **Reading Guide** 📖
 
-## **Links**
+A less-detailed document to warm you up for my website and Gitwiki:
+📄 Download Reading Guide
+
+
+## **Links** 🌐
     GitHub: https://github.com/Justin509805?tab=repositories
 
