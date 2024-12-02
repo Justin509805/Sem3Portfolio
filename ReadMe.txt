@@ -3,41 +3,34 @@ Semester 3 Portfolio Website
 Welcome to my Semester 3 Portfolio Website! This website showcases my skills, projects, and learning outcomes. 
 
 
-Table of Contents
+# Sections 📚
 
-    Home Page
-        Skills Section
-        Footer
-    Projects
-        UXYNERGY
-        Fast Fashion Project
-    Learning outcomes
-        Lo1
-        Lo2
-        Lo3
-        Lo4
-        Lo5
-    Skills
+✔️ HOME PAGE
+✔️ LEARNING OUTCOMES 1-5
+✔️ UXYNERGY
+✔️ FAST FASHION
+✔️ Certifications 🏆\
+✔️ Blogs\
+✔️ Education\
+✔️ Contact me
 
 
-Features
 
-    Home Page
-    Projects Page
-    Learning Outcomes Pages
-    Skills Section
-    Footer
-    Responsive Design
+# Clone and Use 📋
 
+- The website is built HTML, CSS and JS.
+- Requirements are that your browser needs to be able to load HTML, CSS and JS pages.
+- Clone the repository into your vscode like this:
+  ```bash
+   git clone https://github.com/ashutosh1919/masterPortfolio.git
+  ```
+  This will clone the whole repository in your system.
+- To download required dependencies to your system, navigate to the directory where the cloned repository resides and execute following command:
+  ```node
+  npm install
+  ```
+- Now the project is ready to use
+- You can check it using `npm start`, it will open the website locally on your browser.
 
-This website was built with:
-
-    HTML
-    CSS
-    JavaScript
-
-Contact
-
-    Email: j.veenhuis@fontysict.nl
-    LinkedIn: https://www.linkedin.com/in/justin-veenhuis-403a9b2a0/
+# Links
     GitHub: https://github.com/Justin509805?tab=repositories
