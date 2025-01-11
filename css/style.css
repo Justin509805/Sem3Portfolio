@@ -608,6 +608,12 @@ body {
   width: 80%;
   border-radius: 15px;
 }
+
+/* Actual iframe */
+.first-img img {
+  width: 80%;
+  border-radius: 15px;
+}
 /* Div for the href and img */
 .div-href-img-overlay {
   position: relative;
