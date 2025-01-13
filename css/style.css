@@ -718,6 +718,10 @@ body {
   list-style-type: none;
 }
 
+.dropdown-content a {
+  color: #007bff;
+}
+
 .dropdown-content ul li {
   margin: 5px 0;
 }
